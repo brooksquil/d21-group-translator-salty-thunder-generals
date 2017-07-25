@@ -8,17 +8,35 @@
 </head>
 <body>
     <h1>Translator</h1>
-    <h3>Input</h3>
-    <p><input name="Langugage" type="text" /></p>
+    <h3>Input Language</h3>
+    <!--<p><input name="Langugage" type="text" /></p>-->
+    <textarea rows="4" cols="50">
+
+</textarea>
+
+
 <p><form>
 
-     <h3>special conditions</h3>
- <input type="radio-box" name="special conditions" >I have a down payment <br>
-    <input type="radio-box" name="special conditions" >Out-of-state resident <br>
-    <input type="checkbox" name="special conditions" >Married <br>
-    <input type="checkbox" name="special conditions" >Loan will be co-signed<br>
-    <script src="main.js"></script>
+     
+     
+   <select>
+        <option selected disabled hidden>Languages</option>
+        <option id ="yiddish" >Russian</option>
+        <option id ="celtic" >Spanish</option>
+        <option id ="spanish" >Swedish</option>
+        <option id ="ted" >Irish</option>
+    </select>
 </form>
 </p>
+<button id="btn-darklist">Translate</button><br>
+
+<h3>Translation</h3>
+<div id="converion"></div>
+
+
+
+
+<script src="main.js"></script>
 </body>
 </html>
+
