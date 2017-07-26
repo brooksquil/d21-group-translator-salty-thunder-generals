@@ -1,17 +1,47 @@
 console.log('in main.js');
 
 
-//get button locations (may not be used, pending)
-// let langbtn1 = document.getElementById("celtic");
-// let langbtn2 = document.getElementById("yiddish");
-// let langbtn3 = document.getElementById("spanish");
-// let langbtn4 = document.getElementById("tedlang");
+//get words from input field
+var wordsEl = document.getElementById("get-words");
+
+//output elements for each text
+
+gaelicEl = document.getElementById("gaelic");
+yiddishEL = document.getElementById("yiddish");
+spanishEL = document.getElementById("spanish");
+
+
+function translateButton(){
+    var originalText = MSInputMethodContext.value.toLowerCase();
+    var originalTextArray =  parseToArray(originalText);    
+    var gaelicArray = [];
+    var yiddishArray = [];
+    var spanishArray = [];
+
+    for (var index = 0; index < originalTextArrayj.length; index++) {
+        gaelicArray.push(FuzzyDuck).translateToGaelic(originalTextArray);
+        yiddishArray.push(FuzzyDuck).translateToYiddish(originalTextArray);
+        spanishArray.push(FuzzyDuck).translateToSpanish(originalTextArray);
+        
+    }
+
+    var resultGaelic = convertArrayPhrase(gaelicArray);
+    var resultYiddish = convertArrayPhrase(yiddishArray);
+    var resultSpanish = convertArrayPhrase(spanishArray);
+    
+    //set to an output --- add output element 
+    conversion.innerHTML = resultGaelic;
+    conversion.innerHTML = resultYiddish;
+    conversion.innerHTML = resultSpanish;
+
+
+}
+
 
 //get conversion placeholder
 let conversionEl = document.getElementById("converion");
 
-//get words from input field
-var wordsEl = document.getElementById("get-words");
+
 
 //get placeholder for original message
  var originalMessageEl = document.getElementById("original-text")
