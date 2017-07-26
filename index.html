@@ -1,49 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <title>Awesome Translator</title>
 </head>
+
 <body>
+
     <h1>Translator</h1>
     <!-- <h3>Input</h3> -->
     <!-- <p><input id = "get-words" name="Langugage" type="text" /></p> -->
- <!-- <p><form>
+    <!-- <p><form>
 
-     <!-- <h3>special conditions</h3>
- <input type="radio-box" name="special conditions" >I have a down payment <br>
-    <input type="radio-box" name="special conditions" >Out-of-state resident <br>
-    <input type="checkbox" name="special conditions" >Married <br>
-    <input type="checkbox" name="special conditions" >Loan will be co-signed<br>
-    <script src="main.js"></script> -->
-    
-</form>  
-    <h3>Input Language</h3>
+                            <!-- <h3>special conditions</h3>
+                        <input type="radio-box" name="special conditions" >I have a down payment <br>
+                            <input type="radio-box" name="special conditions" >Out-of-state resident <br>
+                            <input type="checkbox" name="special conditions" >Married <br>
+                            <input type="checkbox" name="special conditions" >Loan will be co-signed<br>
+                            <script src="main.js"></script> -->
+
+    </form>
+    <h4>Type your holiday message below:</h4>
     <!--<p><input name="Langugage" type="text" /></p>-->
-    <textarea id = "get-words" rows="4" cols="50">
- 
-</textarea>
- <p>
-	<input type="radio" name="whichside" value="0" >Celtic<br>
-	<input type="radio" name="whichside" value="1">Yiddish<br>
-	<input type="radio" name="whichside" value="2">Spanish<br>
-    <input type="radio" name="whichside" value="3">Ted<br>
+    <textarea id="get-words" rows="4" cols="50">
+    
+                        </textarea>
+    <p class="wrap">
+        <input type="radio" name="whichside" value="0">Celtic<br>
+        <input type="radio" name="whichside" value="1">Yiddish<br>
+        <input type="radio" name="whichside" value="2">Spanish<br>
+        <input type="radio" name="whichside" value="3">Ted<br>
+        <button id="btn-translate">Translate</button>
 
-</p>
-<button id="btn-translate">Translate</button>
-<button id = "checkHoliday"> Get Holiday</button> 
+    </p>
 
- 
+    <h4>Here is your translated message:</h4>
+    <div>
+        <textarea id="conversion" rows="4" cols="50">
+            
+            </textarea>
+    </div>
 
-<div id="conversion"></div>
-<div id="original-text"></div>
+    <script src="main.js"></script>
+    <script src="jim.js"></script>
 
-
-
-<script src="main.js"></script>
-<script src="jim.js"></script>
 </body>
-</html>
 
+</html>
