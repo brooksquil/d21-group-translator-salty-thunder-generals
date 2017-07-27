@@ -1,7 +1,8 @@
+
 console.log('you are in clay.js');
 
-var FuzzyDuck = function(origTranslate) {
-    var yiddishText = {
+var FuzzyDuck = function(gaelic) {
+    var gaelicText = {
                 "and": "y",
                 "with": "con",
                 "the": "el",
@@ -162,8 +163,10 @@ var FuzzyDuck = function(origTranslate) {
                 "made": "hecho",
                 "clay": "arcilla"
             };
-    origTranslate.translateToYiddish = function(input) {
-        return yiddishText[input];
+    origTranslate.translateTogaelic = function(input) {
+        return gaelicText[input];
     };
     return origTranslate;
 }(FuzzyDuck);
+
+   
