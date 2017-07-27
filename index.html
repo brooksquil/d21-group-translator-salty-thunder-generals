@@ -26,9 +26,11 @@
     </form>
     <h4>Type your holiday message below:</h4>
     <!--<p><input name="Langugage" type="text" /></p>-->
-    <textarea id="get-words" rows="4" cols="50">
+    <input id="get-words" type ="text" name ="textarea", size ="60" placeholder=" Enter Holiday Phrase" >
+      <!-- <textarea id="get-words" rows="4" cols="50"> 
+
     
-                        </textarea>
+                        </textarea> -->
     <p class="wrap">
         <input type="radio" name="whichside" value="0">Celtic<br>
         <input type="radio" name="whichside" value="1">Yiddish<br>
@@ -37,17 +39,23 @@
         <button id="btn-translate">Translate</button>
 
     </p>
-
+   
     <h4>Here is your translated message:</h4>
     <div>
         <textarea id="conversion" rows="4" cols="50">
             
             </textarea>
+        <div id = "gaelic"> </div>
+        <div id = "yiddish"> </div>
+        <div id = "spanish"> </div>
+
     </div>
-
-    <script src="main.js"></script>
+    <script src="translate.js"></script>
     <script src="jim.js"></script>
-
+    <script src="brooke.js"></script>
+    <script src="clay.js"></script>
+    <script src="phraseconverter.js"></script>
+     <script src="main.js"></script>
 </body>
 
 </html>
