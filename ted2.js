@@ -1,8 +1,8 @@
-// Ted IIFE Kurdish
+console.log('in ted2.js');
 
-var Fuzzyduck = function (originalFuzzyDuck) {
 
-	let englishKurdishWords = {
+var FuzzyDuck = function(origTranslate) {
+    var kurdishText = {
     "and": "û",
     "with": "bi",
     "the": "ew",
@@ -164,12 +164,11 @@ var Fuzzyduck = function (originalFuzzyDuck) {
     "clay": "herrî"
   	};
 
-  	originalFuzzyDuck.translateToKurdish = function(arrToTranslate) {
+  	origTranslate.translateToKurdish = function(english) {
+        return kurdishText[english];
+    };
+    return origTranslate;
+}(FuzzyDuck);
 
-  		// Translation logic here
-  		return translatedText;
-  	};
 
 
-
-}(Fuzzyduck);

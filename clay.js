@@ -169,4 +169,3 @@ var FuzzyDuck = function(gaelic) {
     return origTranslate;
 }(FuzzyDuck);
 
-   

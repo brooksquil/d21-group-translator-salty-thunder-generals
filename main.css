@@ -1,3 +1,6 @@
+
+
+
     body {
         background-image: url(images/snowyFarm.jpg);
         background-repeat: no-repeat;
@@ -7,22 +10,26 @@
         color: blue;
         font-size: 1.5em;
         letter-spacing: .1em;
+        line-height: .5em;
         padding: 5px;
-        margin: 0 0 25px 160px;
+        margin: 0 0 25px 80px;
         height: 100%;
         text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
     }
     
-    p {
+   p {
         background-color: blue;
+        line-height: 1.5em;
         border-radius: 15%;
         width: 25%;
         color: white;
-        padding: 20px;
+        padding: 12px;
         text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        font-size: .9em;
+        box-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
     }
     
-    #btn-translate {
+   #btn-translate {
         padding: 2px;
         height: 25px;
         width: 80px;
@@ -30,5 +37,19 @@
         font-size: .6em;
         color: red;
         background-color: white;
-        border-radius: 10%;
+        border-radius: 15%;
     }
+    
+   div.wrapper {
+        box-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+        background-color: blue;
+        border-radius: 15%;
+        width: 400px;
+        height: 80px;
+        color: white;
+        font-size: .9em;
+        padding: 42px 22px;
+    }
+
+
+ 
