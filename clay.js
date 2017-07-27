@@ -1,3 +1,4 @@
+
 console.log('you are in clay.js');
 
 var FuzzyDuck = function(gaelic) {
@@ -167,3 +168,4 @@ var FuzzyDuck = function(gaelic) {
     };
     return origTranslate;
 }(FuzzyDuck);
+
